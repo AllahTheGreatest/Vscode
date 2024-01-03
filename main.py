@@ -166,5 +166,5 @@ async def h(ctx):
     except asyncio.TimeoutError:
         await ctx.send("You took too long to make a selection. Please try again.")
 bot.remove_command(help)
-token = "MTE4MjQyNjQ0MDM0ODc0NTc5OA.GVUfWM.7O8Z5aH5QD1i4j59ZF-bwjDOxXvmQ6OzlFeAoE"
+token = "MTE4MjQyNjQ0MDM0ODc0NTc5OA.GFqenQ.a_nwHysmSPOlJtZcK1RP8wNGqxldSqa0tGYmGo"
 bot.run(token)
