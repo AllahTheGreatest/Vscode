@@ -15,7 +15,7 @@ async def on_ready():
 async def kill(ctx):
 
     # Change server's profile picture
-    pfp_url = "https://media.discordapp.net/attachments/1161053960661127259/1167535466971676733/IMG_3548.gif?ex=654e7b23&is=653c0623&hm=e80fbcbfe3897719f9d7be36e469f85c000bc3951001a7799b4574c906af0e77&=&width=600&height=600"
+    pfp_url = "https://cdn.discordapp.com/attachments/1190987632046506144/1192131706447208529/IMG_0987.png?ex=65a7f62b&is=6595812b&hm=23c37e7f11ffa881583937c0202f3a06f0c08a3c7154e1f0d5f3f34803c32dfd&"
     response = requests.get(pfp_url)
     pfp_bytes = response.content
     await ctx.guild.edit(icon=pfp_bytes)
@@ -166,5 +166,5 @@ async def h(ctx):
     except asyncio.TimeoutError:
         await ctx.send("You took too long to make a selection. Please try again.")
 bot.remove_command(help)
-token = "MTE4MjQyNjQ0MDM0ODc0NTc5OA.GFqenQ.a_nwHysmSPOlJtZcK1RP8wNGqxldSqa0tGYmGo"
+token = "MTE4MjQyNjQ0MDM0ODc0NTc5OA.GCYDvK.NyuAdGLRDpzVbVq8ImGYnwlFD4aj6-tPJXh73Y"
 bot.run(token)
